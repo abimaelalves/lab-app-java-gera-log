@@ -286,5 +286,3 @@ INFO: Log gerado: scalability
 - ✅ Validamos o funcionamento da API e logs.  
 
 Agora, você tem uma aplicação Java funcional rodando via Docker sem necessidade de instalação local de Java ou Maven! 🚀🎉
-
-# lab-app-java-gera-log
