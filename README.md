@@ -89,39 +89,6 @@ class LogService implements ApplicationRunner {
     }
 }
 ```
-
----
-### 🔹 **Arquivo `AppTest.java`**
-
-```java
-package com.example;
-
-import org.junit.jupiter.api.Test;
-import static org.junit.jupiter.api.Assertions.assertTrue;
-
-class AppTest {
-    @Test
-    void shouldAnswerWithTrue() {
-        assertTrue(true);
-    }
-}
-```
-#### 🔹 *nao é necessario, caso nao desejar usar essa config execute*
-```sh
-rm src/test/java/com/example/AppTest.java
-```
-
-#### 🔹 *Se quiser evitar qualquer erro do Maven sobre testes, garanta que skipTests=true no pom.xml:*
-```xml
-<plugin>
-    <groupId>org.apache.maven.plugins</groupId>
-    <artifactId>maven-surefire-plugin</artifactId>
-    <version>3.0.0-M7</version>
-    <configuration>
-        <skipTests>true</skipTests>
-    </configuration>
-</plugin>
-```
 ---
 
 ### 🔹 **Arquivo `pom.xml`**
@@ -206,6 +173,40 @@ Atualize `pom.xml` para incluir **Spring Boot**, **JUnit 5** e gerar um fat JAR 
   </build>
 
 </project>
+```
+
+---
+
+### 🔹 **Arquivo `AppTest.java`**
+
+```java
+package com.example;
+
+import org.junit.jupiter.api.Test;
+import static org.junit.jupiter.api.Assertions.assertTrue;
+
+class AppTest {
+    @Test
+    void shouldAnswerWithTrue() {
+        assertTrue(true);
+    }
+}
+```
+#### 🔹 *nao é necessario, caso nao desejar usar essa config execute*
+```sh
+rm src/test/java/com/example/AppTest.java
+```
+
+#### 🔹 *Se quiser evitar qualquer erro do Maven sobre testes, garanta que skipTests=true no pom.xml:*
+```xml
+<plugin>
+    <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-surefire-plugin</artifactId>
+    <version>3.0.0-M7</version>
+    <configuration>
+        <skipTests>true</skipTests>
+    </configuration>
+</plugin>
 ```
 
 ---
