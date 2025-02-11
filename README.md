@@ -93,8 +93,6 @@ class LogService implements ApplicationRunner {
 ---
 ### 🔹 **Arquivo `AppTest.java`**
 
-#### 🔹 *nao é necessario, caso nao desejar usar essa config execute *
-
 ```java
 package com.example;
 
